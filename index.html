@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>
+                JavaScript Basics
+            </h1>
+        </header>
+        <a href="#Introduction_to_JavaScript" class="nav-link" id="first-link">
+            Introduction to JavaScript
+        </a>
+        <a href="#Variables_and_Data_Types" class="nav-link">
+            Variables and Data Types
+        </a>
+        <a href="#Functions" class="nav-link">
+            Functions
+        </a>
+        <a href="#DOM_Manipulation" class="nav-link">
+            DOM Manipulation
+        </a>
+        <a href="#ES6_Features" class="nav-link">
+            ES6 Features
+        </a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_JavaScript">
+            <header>
+                <h2>
+                    Introduction to JavaScript
+                </h2>
+            </header>
+            <p>
+                JavaScript is a high-level, interpreted programming language that allows you to implement complex
+                features on web pages — from dynamic content updates to animations and user interactions. It’s one of
+                the core technologies of the web, alongside HTML and CSS.
+            </p>
+            <p>
+                Developed by Netscape in the 1990s, JavaScript has evolved into a versatile language used for frontend,
+                backend, game development, and more. With the rise of frameworks like React, Angular, and Node.js,
+                JavaScript now powers full-stack applications.
+            </p>
+            <pre>
+                <code>
+                    console.log("Hello, JavaScript!");
+                </code>
+            </pre>
+            <ul>
+                <li>
+                    JavaScript runs in the browser and on servers using Node.js.
+                </li>
+                <li>
+                    It is dynamically typed and supports event-driven programming.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Variables_and_Data_Types">
+            <header>
+                <h2>
+                    Variables and Data Types
+                </h2>
+            </header>
+            <p>
+                Variables in JavaScript are containers for storing data values. You can declare them using var, let, or
+                const. The choice affects scope and mutability. let and const are block-scoped, while var is
+                function-scoped.
+            </p>
+            <p>
+                JavaScript supports various data types, including primitive types like string, number, boolean,
+                undefined, null, and symbol, and non-primitive types like objects and arrays.
+            </p>
+            <pre>
+                <code>
+                    let name = "Reetu";
+                    const age = 20;
+                    var isFrontendDev = true;
+                </code>
+            </pre>
+            <ul>
+                <li>
+                    Use const for values that don't change.
+                </li>
+                <li>
+                    Arrays and objects are reference types.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Functions">
+            <header>
+                <h2>
+                    Functions
+                </h2>
+            </header>
+            <p>
+                Functions in JavaScript are reusable blocks of code that perform specific tasks. They help in organizing
+                code and improving modularity. You can declare functions using the function keyword, function
+                expressions, or arrow syntax.
+            </p>
+            <p>
+                Functions can take parameters, return values, and even be stored in variables or passed as arguments,
+                making JavaScript a functional programming language as well.
+            </p>
+            <pre>
+                <code>
+                    function greet(name) {
+                        return `Hello, ${name}!`;
+                    }
+                    console.log(greet("Reetu"));
+                </code>
+            </pre>
+            <ul>
+                <li>
+                    Arrow functions (=>) provide a concise syntax.
+                </li>
+                <li>
+                    Functions can be anonymous or named.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="DOM_Manipulation">
+            <header>
+                <h2>
+                    DOM Manipulation
+                </h2>
+            </header>
+            <p>
+                The Document Object Model (DOM) is a programming interface for web documents. JavaScript can manipulate
+                the DOM to update content, structure, and styles dynamically without reloading the page.
+            </p>
+            <p>
+                Using DOM methods like getElementById, querySelector, and addEventListener, you can make your websites
+                interactive by responding to user actions like clicks and inputs.
+            </p>
+            <pre>
+                <code>
+                    document.getElementById("btn").addEventListener("click", () => {
+                        alert("Button clicked!");
+                    });
+                </code>
+            </pre>
+            <ul>
+                <li>
+                    querySelector is more flexible than getElementById.
+                </li>
+                <li>
+                    Events help add interactivity to elements.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="ES6_Features">
+            <header>
+                <h2>
+                    ES6 Features
+                </h2>
+            </header>
+            <p>
+                ES6 (ECMAScript 2015) introduced major enhancements to JavaScript, making it more powerful and cleaner
+                to write. Some key features include let/const, arrow functions, template literals, destructuring, and
+                classes.
+            </p>
+            <p>
+                These features improve code readability and offer better control over scope, object handling, and
+                iteration. ES6 also made JavaScript more modular with the import/export system.
+            </p>
+            <pre>
+                <code>
+                    const user = { name: "Reetu", role: "Frontend Dev" };
+                    const { name, role } = user;
+                    console.log(`${name} is a ${role}`);
+                </code>
+            </pre>
+            <ul>
+                <li>
+                    Use template literals with backticks for cleaner strings.
+                </li>
+                <li>
+                    Destructuring makes it easy to extract values from objects and arrays.
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
